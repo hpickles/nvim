@@ -12,6 +12,8 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "esbonio",
+  "phpactor",
 }
 
 lsp_installer.setup()

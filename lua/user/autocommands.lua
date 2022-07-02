@@ -26,6 +26,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
+    vim.cmd [[ autocmd FileType gitcommit set textwidth = 72 ]]
+    vim.cmd [[ autocmd FileType gitcommit set colorcolumn+ = 51 ]]
   end,
 })
 
